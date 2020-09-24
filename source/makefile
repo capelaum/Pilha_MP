@@ -1,22 +1,22 @@
 IDIR =../include
 CC = g++ 
-CFLAGS= -Wall -Werror -g -I$(IDIR)
+CFLAGS= -Wall -g -I$(IDIR)
 
 # diretorios de objetos e librarys
-ODIR = obj
 LDIR =../lib
 
 # diretorio da pilha vetor
 VDIR = vetor
 
 # define as librarys a serem usadas (Gtest)
-LIBS = -lm -lgtest -lpthread -lgtest_main
+LIBS = -lm -lgtest -lgtest_main
 
 # headers
-_DEPS = pilha.hpp
+_DEPS = pilha.hpp 
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
 # objetos
+ODIR = obj
 _OBJ = testa_pilha.o pilha.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
@@ -32,12 +32,11 @@ testa_vetor: $(OBJ)
 #Checkers
 
 #========================================
-ODIR2 = obj2
-
 # diretorio da pilha lista
 LISTDIR = lista
 
 # objetos2
+ODIR2 = obj2
 _OBJ2 = testa_pilha.o pilha.o
 OBJ2 = $(patsubst %,$(ODIR2)/%,$(_OBJ2))
 

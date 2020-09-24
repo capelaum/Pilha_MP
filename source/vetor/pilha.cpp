@@ -39,8 +39,9 @@ ItemType stack::pop()
 	// check for stack underflow
 	if (isEmpty())
 	{
-		cout << "UnderFlow\nProgram Terminated\n";
-		exit(EXIT_FAILURE);
+		cout << "UnderFlow!\n";
+		//exit(EXIT_FAILURE);
+		return false;
 	}
 
 	cout << "Removing " << peek() << endl;

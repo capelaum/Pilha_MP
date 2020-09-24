@@ -1,55 +1,55 @@
 // Copyright [2019] Luis
 
-#include <gtest/gtest.h>
-
-#include "pilha.hpp"
+#include "../../include/gtest/gtest.h"
+#include "../../include/pilha.hpp"
 
 // Testes da pilha Vetor
 // Utilizando Gtest
-/*
+
 // CreateStack e SetSize: tamanho da pilha definida ao se criar
 TEST(TestaPilha_vetor, Create_SetSize) {
     cout << "=======================================";
     cout << "\n-->TESTES DA PILHA COM VETOR:\n";
     cout << "=======================================\n";
 
-    Pilha pilha(1);              // cria pilha de tamanho 1
+    stack pilha(1);              // cria pilha de tamanho 1
     ASSERT_EQ(0, pilha.size());  // pilha ainda vazia
     pilha.push(2);
     ASSERT_EQ(1, pilha.size());  // pilha apos 1 push
-    ASSERT_EQ(2, pilha.top());   // verifica topo
+    ASSERT_EQ(2, pilha.peek());   // verifica topo
 }
 
 // Push
 TEST(TestaPilha_vetor, Push) {
-    Pilha pilha(4);
+    stack pilha(4);
     pilha.push(5);
-    ASSERT_EQ(5, pilha.top());
+    ASSERT_EQ(5, pilha.peek());
 }
 
 // Pop
 TEST(TestaPilha_vetor, Pop) {
-    Pilha pilha(4);
+    stack pilha(4);
     pilha.push(2);
     // checa elemento retornado de pop
     ASSERT_EQ(2, pilha.pop());
 
     // caso de retirar elemento de pilha vazia
     ASSERT_FALSE(pilha.pop());
+
     // checa tamanho apos tentativa de underflow
     ASSERT_EQ(0, pilha.size());
 }
 
 // Top
 TEST(TestaPilha_vetor, Top) {
-    Pilha pilha(4);
+    stack pilha(4);
     pilha.push(5);
-    ASSERT_EQ(5, pilha.top());
+    ASSERT_EQ(5, pilha.peek());
 }
 
 // Size
 TEST(TestaPilha_vetor, size) {
-    Pilha pilha(10);
+    stack pilha(10);
     ASSERT_EQ(0, pilha.size());  // pilha ainda vazia
 
     // testa ao inserir um item
@@ -59,7 +59,7 @@ TEST(TestaPilha_vetor, size) {
 
 // isFull
 TEST(TestaPilha_vetor, isFull) {
-    Pilha pilha(3);
+    stack pilha(3);
     pilha.push(4);
     pilha.push(7);
     pilha.push(6);
@@ -77,7 +77,7 @@ TEST(TestaPilha_vetor, isFull) {
 
 // isEmpty
 TEST(TestaPilha_vetor, isEmpty) {
-    Pilha pilha(3);
+    stack pilha(3);
     ASSERT_EQ(true, pilha.isEmpty());
 }
 
@@ -86,10 +86,10 @@ int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
-*/
+
 
 // main function
-int main()
+/* int main()
 {
 	stack pt(3);
 
@@ -112,5 +112,5 @@ int main()
 		cout << "Stack Is Not Empty\n";
 
 	return 0;
-}
+} */
 

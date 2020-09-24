@@ -16,8 +16,7 @@ A pasta source contem as 2 pastas com Arquivos fonte:
 - lista
 
 .Arquivos fonte: pilha.cpp e testa_pilha.cpp
-
-.As pastas objeto: obj(vetor) e obj2(lista)
+.Pastas objeto: obj(vetor) e obj2(lista)
 
 ---------------------------------------------------
 ---Instruções para compilar e executar os testes---

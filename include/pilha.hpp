@@ -19,13 +19,13 @@ class Pilha {
 private:
 
     struct Item {
-        ItemType *arr = NULL;   // vetor de ItemType
+        ItemType* arr = NULL;   
         
-        ItemType item;   // dado guardado
-        Item* anterior;  // ptr de struct item 
+        ItemType item;   
+        Item* anterior;   
         
-        int qtd;         // qtd de itens
-        int index;       // indice -> primeiro[0],1,2,...,ultimo[n]
+        int qtd;         
+        int index;      
     }*top;
 
 public:
